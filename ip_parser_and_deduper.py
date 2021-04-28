@@ -62,6 +62,7 @@ def parse_ip(input_ip):
 			out_file.write("{}\n".format(line))
 		out_file.write("\nIP count: {}".format(len(sorted_ip_return)))
 		out_file.write("\nOther count: {}".format(len(none_ip_s)))
+		print("Output writen to output_ips.txt")
 
 def parse_file(file):
 	ip_arr = []
