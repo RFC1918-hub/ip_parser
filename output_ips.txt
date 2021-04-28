@@ -20,5 +20,5 @@
 The following are not valid IP address or ranges: 
 qweqwesadfqw.qweqwewioueoi.weqqwe
 
-IP count: 18
-Other count: 1
+IP addresses parsed: 18
+Unable to parse: 1

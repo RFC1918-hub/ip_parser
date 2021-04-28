@@ -60,9 +60,12 @@ def parse_ip(input_ip):
 		out_file.write("\nThe following are not valid IP address or ranges: \n")
 		for line in none_ip_s:
 			out_file.write("{}\n".format(line))
-		out_file.write("\nIP count: {}".format(len(sorted_ip_return)))
-		out_file.write("\nOther count: {}".format(len(none_ip_s)))
+		out_file.write("\nIP addresses parsed: {}".format(len(sorted_ip_return)))
+		out_file.write("\nUnable to parse: {}".format(len(none_ip_s)))
+		print("\n================================\n")
 		print("Output writen to output_ips.txt")
+		print("\nIP addresses parsed: {}".format(len(sorted_ip_return)))
+		print("Unable to parse: {}".format(len(none_ip_s)))
 
 def parse_file(file):
 	ip_arr = []
@@ -95,6 +98,11 @@ def cmdline_args():
 
 if __name__ == '__main__':
 
+	print("""
+**********************************************
+* IP Parser and Deduper                      *
+*                                            *
+**********************************************\n""")
 	try:
 		args = cmdline_args()
 		if args.file: 
